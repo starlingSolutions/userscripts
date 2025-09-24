@@ -6,6 +6,8 @@
 // @author       Dylan Day
 // @match        https://projects.blendapps.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=blendapps.com
+// @updateURL    https://github.com/starlingSolutions/userscripts/raw/refs/heads/main/zohoValidation.user.js
+// @downloadURL  https://github.com/starlingSolutions/userscripts/raw/refs/heads/main/zohoValidation.user.js
 // @grant        none
 // ==/UserScript==
 
