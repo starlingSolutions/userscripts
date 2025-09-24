@@ -29,16 +29,16 @@
     ];
 
     const requirements = [
-        { field : 'PM Estimate',              isMissing : () => !getValue('PM Estimate (hours)'), maxStatus : 'Design' },
-        { field : 'Primary Developer',        isMissing : () => !getValue('Primary Developer'), maxStatus : 'Pre-Development' },
-        { field : 'Developer Estimate',       isMissing : () => !getValue('Developer Estimate (hours)'), maxStatus : 'Pre-Development' },
-        { field : 'Technical Scope Reviewer', isMissing : () => !getValue('Technical Scope Reviewed By'), maxStatus : 'Pre-Development Review' },
-        { field : 'Code Pull Request',        isMissing : () => !getValue('Code Pull Request'), maxStatus : 'In Progress' },
-        { field : 'Passes Relevant AT',       isMissing : () => !getValue('Passes Relevant AT'), maxStatus : 'More Work Required' },
-        { field : 'Release Note',             isMissing : () => !getValue('Release Note'), maxStatus : 'In Progress' },
-        { field : 'Initial Code Reviewer',    isMissing : () => !getValue('Initial Code Reviewer'), maxStatus : 'Code Review' },
-        { field : 'Secondary Code Reviewer',  isMissing : () => !getValue('Secondary Code Reviewer'), maxStatus : 'Code Review' },
-        { field : 'Functional Reviewer',      isMissing : () => !getValue('Functional Review By'), maxStatus : 'Functional Review' },
+        { field : 'PM Estimate',              isMissing : () => !getValue('PM Estimate (hours)'),                               maxStatus : 'Design' },
+        { field : 'Primary Developer',        isMissing : () => !getValue('Primary Developer'),                                 maxStatus : 'Pre-Development' },
+        { field : 'Developer Estimate',       isMissing : () => !getValue('Developer Estimate (hours)'),                        maxStatus : 'Pre-Development' },
+        { field : 'Technical Scope Reviewer', isMissing : () => !getValue('Technical Scope Reviewed By'),                       maxStatus : 'Pre-Development Review' },
+        { field : 'Code Pull Request',        isMissing : () => !getValue('Code Pull Request'),                                 maxStatus : 'In Progress' },
+        { field : 'Passes Relevant AT',       isMissing : () => !getValue('Passes Relevant AT'),                                maxStatus : 'More Work Required' },
+        { field : 'Release Note',             isMissing : () => !getValue('Release Note'),                                      maxStatus : 'In Progress' },
+        { field : 'Initial Code Reviewer',    isMissing : () => !getValue('Initial Code Reviewer'),                             maxStatus : 'Code Review' },
+        { field : 'Secondary Code Reviewer',  isMissing : () => !getValue('Secondary Code Reviewer'),                           maxStatus : 'Code Review' },
+        { field : 'Functional Reviewer',      isMissing : () => !getValue('Functional Review By'),                              maxStatus : 'Functional Review' },
         { field : 'Docs Reviewer',            isMissing : () => getValue('Docs Pull Request') && !getValue('Docs Reviewed By'), maxStatus : 'Functional Review' },
     ];
 
