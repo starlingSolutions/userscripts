@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Zoho Task Status Validation
 // @namespace    blendapps.com
-// @version      1.0.1
+// @version      1.1.0
 // @description  Block invalid status changes in Zoho Projects before save
 // @author       Dylan Day
 // @match        https://projects.blendapps.com/*
@@ -29,6 +29,7 @@
     ];
 
     const requirements = [
+        { field : 'Rank',                     isMissing : () => getValue('Release Target') && !getValue('Rank'),                maxStatus : 'Backlog' },
         { field : 'PM Estimate',              isMissing : () => !getValue('PM Estimate (hours)'),                               maxStatus : 'Design' },
         { field : 'Primary Developer',        isMissing : () => !getValue('Primary Developer'),                                 maxStatus : 'Pre-Development' },
         { field : 'Developer Estimate',       isMissing : () => !getValue('Developer Estimate (hours)'),                        maxStatus : 'Pre-Development' },
