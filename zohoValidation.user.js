@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Zoho Task Status Validation
 // @namespace    blendapps.com
-// @version      1.1.0
+// @version      1.1.1
 // @description  Block invalid status changes in Zoho Projects before save
 // @author       Dylan Day
 // @match        https://projects.blendapps.com/*
@@ -55,7 +55,7 @@
 
         let value = valueElement?.value;
 
-        if (value == 'Select User') {
+        if (value == 'Select User' || value == 'Select Value') {
             value = '';
         }
 
