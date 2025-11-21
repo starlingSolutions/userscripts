@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Zoho Task Status Validation
 // @namespace    blendapps.com
-// @version      1.1.2
+// @version      1.1.3
 // @description  Block invalid status changes in Zoho Projects before save
 // @author       Dylan Day
 // @match        https://projects.blendapps.com/*
@@ -114,8 +114,9 @@
     /******** INIT ********/
     function init() {
         const blendProjectId = '1619638000001482542';
+        const thisProjectId  = document.querySelector('[data-projectid]')?.getAttribute('data-projectid');
 
-        if (!window.location.href.includes(blendProjectId)) {
+        if (thisProjectId && blendProjectId != thisProjectId) {
             return;
         }
 
